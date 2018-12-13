@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Découvrez la ville en vélo'v !</title>
+        <link rel="stylesheet" href="css/style.css"/>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGPHfZras34eZHvUuZXGPEuxTKHfV3ryM"></script>
+        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>     
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link rel="icon" type="image/png" href="images/velo.png" alt="logo" />
+        
+    </head>
+    
+    <body>
+
+        <div id="carrousel">
+            <ul>
+
+                <li><img src="images/presentation.png" /></li>
+
+                <li><img src="images/description.png" /></li>
+
+                <li><img src="images/reservation.png" /></li>
+                
+                <li><img src="images/recap.png" /></li>
+
+            </ul>
+            
+            <ul id="defileur">  
+                <li id="prev"><i class="fas fa-chevron-left"></i></li>
+                <li id="next"><i class="fas fa-chevron-right"></i></li>
+            </ul>
+            
+        </div>
+
+
+        <div id="conteneur">
+            <div id="map"></div>
+            <div id="clic">
+            <div id="status"></div>
+            <div id="resa" ></div>
+            <div id="current"></div>
+            <div id="erreur"></div>
+            </div>
+        </div>
+        
+        <footer id="timer">
+        </footer>
+
+        
+
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+        <script src="https://code.jquery.com/jquery-1.12.3.js"   integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc="   crossorigin="anonymous"></script>
+        <script src="js/Slider.js"></script>
+        <script src="js/Stations.js"></script>
+        <script src="js/Map.js"></script>
+        <script src="js/Canva.js"></script>
+        <script src="js/master.js"></script>
+        
+
+    </body>
+</html>
